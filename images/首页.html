@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*清零阶段*/
+	*{margin: 0;padding: 0;}
+	body{border-collapse: collapse;}
+    a{text-decoration: none;font-family: "微软雅黑";font-size: 12px;}
+    a:hover{text-decoration: underline;color: rgb(114.211,258);}
+    ul,ol{list-style: none;}
+    h1,h2,h3,h4,h5,h6{font-weight: normal;}
+    /*横向布局*/
+  .containner{width: 1000px;margin:0 auto;height: 100%;}
+	.topbar{height: 28px;background-color: #0A0808;}
+	.header{height: 90px;background-color: #FDFBFB;}
+	.banner{height: 405px;background-color: #E9E9E9;}
+  .picture{height: 150px;background-color:#E7EBEE;}
+  .ad{height: 315px;background-color: #F6F7F9;}
+	.footer{height: 150px;background-color: #525E6A;}
+  /* /*横向布局结束*/
+   .bread{height: 50px;background-color: #fff;}
+   .content{height: 520px;width: 1000px;border-top: 1px solid rgb(228,228,228)}
+   .aside{width: 249px;float: left;height: 520px;border-right: 1px solid rgb(228,228,228)}
+   .mainnav{width: 750px;float: right;height: 520px; }
+   .user-infor{height: 180px;width: 750px;}
+   .safe-toois{height: 140px;width: 750px;border-top: 1px solid rgb(228,228,228);border-bottom: 1px solid rgb(228,228,228);}
+   .box{width: 33%;height: 100%;float: left;}
+   .box2{border-left: 1px solid rgb(228,228,228);border-right: 1px solid rgb(228,228,228)}
+   .top{float: right;}
+   .top li{float: left;font-size: 12px;text-align: center;color: #fff;padding-top: 5px;}
+   .top li a{color: #fff;margin-left: 15px;margin-right: 15px;}
+   .top a:hover{text-decoration: underline;color: #F0EAEA;}
+  .header h1{float: left;display: block;margin-top: 15px;}
+  .header ul{float: right;}
+  .header ul li{float: left;border-left:1px dashed #BEBFC3;height: 65px;width: 120px;text-align: center;padding-top: 25px; }
+  .header ul{border-right:1px dashed #BEBFC3;}
+  .header ul li a{display:block;font-size: 18px;color:#494747;height: 62px;}
+  .header span{display: block;font-size: 12px;}
+  .header a:hover{color: #76F4D7;border-bottom: 3px solid #4270A2;}
+  .on{color: #76F4D7;border-bottom: 3px solid #4270A2;}
+    /*header  ed*/
+    .banner1{height: 60px;}
+    .banner2{height: 345px;}
+    .bannerLeft{height: 345px;width:720px;float: left;background-image: url(h-banner2.jpg);}
+    .bannerRight{float: left;}
+    .right1{height: 70px;width: 280px;background-color: #2060BE;}
+    .right2{height: 50px;width:280px;background-color: #F0F0F0;}
+    .right3{width: 280px;height: 205px;background-color: #FFFFFF;padding-top:20px;}
+    .right2{text-align: center;height: 50px;line-height:50px; }
+    .right2 h3{color: #B3B3B3;}
+    .bigbtn{height: 70px;}
+    .bigbtn a{display: block;width: 140px;height: 70px;float: left;background-image: url(reg-btn-bg.png);}
+    .bigbtn .recharege{background-position: -140px top;}
+    .bigbtn a:hover{background-image: url(reg-btn-hover-bg.png);}
+    .right3 form{margin-left: 35px;height: 195px;}
+    .right3 p{padding-top: 5px;}
+    .uname{width: 164px;height: 30px;line-height: 30px;background-image: url(user-.jpg);border: none;padding-left: 33px;}
+    .uvad{background-image: url(vad-bg.jpg);width: 95px;height: 27px;border: none;padding-top: 3px;}
+    .upass{width: 164px;height: 28px;border: none;background-image: url(pass-bg.jpg);padding-left: 33px;}
+    .forgetpwd{text-align: right;width:197px;color: #777777;}
+    .vadp img{vertical-align: bottom;}
+    .vadp a{color: #DB5538;}
+    /*banner  ed*/
+    .picture li{float: left;width: 16.66666%;text-align: center;}
+    .picture a{display: block;text-decoration: none;color: #76808A;}
+    .picture a:before{content: "";display: block;height: 82px;width: 82px;margin:15px auto 5px;background-image: url(bg-hotlink.png);transition:all 1s;}
+    .li2 a:before{background-position: -82px 0;}
+    .li3 a:before{background-position: -164px 0;}
+    .li4 a:before{background-position: -246px 0;}
+    .li5 a:before{background-position: -328px 0;}
+    .li6 a:before{background-position: -410px 0;}
+    .li1 a:hover:before{background-position: 0 -82px;}
+    .li2 a:hover:before{background-position: -82px  -82px;}
+    .li3 a:hover:before{background-position: -164px -82px;}
+    .li4 a:hover:before{background-position: -246px -82px;}
+    .li5 a:hover:before{background-position: -328px -82px;}
+    .li6 a:hover:before{background-position: -410px -82px;}
+     /*banner ed*/
+   .footer h4{float: left;padding-top: 35px;}
+   .footer p{float: left;padding-left: 35px;margin-top: 5px;}
+   .footer p img{vertical-align: top;}
+   .f-text{padding-top: 25px;color:#A5B6C6;line-height: 25px;}
+   .f-text a{color: #A5B6C6;}
+   .sub{width: 200px;height: 40px;background-color:#5A85B8;border: none;color: #FFFFFF;font-size: 18px;}
+   /*banner ed*/
+   .ad .block{float: left;width: 33.333%;height: 150px;padding-top: 56px;}
+   .gamein{position: relative;display: block;}
+   .hot{position: absolute;/*background-position: -325px top;*/left: 0;right: 0;}
+   .block h3{width: 90%;margin: 10px auto;border-left: 5px solid rgb(37,196,251);height: 30px;line-height: 30px;padding-left: 5px;padding-right: 5px;color: rgb(39,57,79);font-weight: bold;}
+   h3 .more{float: right;color: rgb(37,196,251);font-size: 12px;color: rgb(39,57,79);}
+   .newslist li{height: 30px;line-height: 30px;width:90%;margin-left: auto;margin-right: auto;border-bottom: 1px dashed #e0e0e0;}
+   .newslist .title{width: 70%;height: 30px;overflow: hidden;float: left;color: #76808A;text-overflow:ellipsis;white-space: nowrap;}
+   .newslist .time{width: 30%;height:30px;overflow: hidden;float: right; color: #76808A;}
+   .job .newslist{padding-left: 120px;}
+   .job .newslist li{width: 50%;float:left;}
+   .job a:before{content: "";display: inline-block;width: 0;height: 0;border: 6px solid transparent;border-left-color: rgb(37,196,251);}
+   .job{background: url(h-job-bg.jpg) no-repeat left bottom;}
+   .job a{color: #76808A;}
+  .job .a5{color: rgb(37,196,251);}
+
+  
+                                                                                            
+
+
+
+	</style>
+</head>
+<body>
+  <div class="topbar"><div class="containner">
+  <ul class="top">
+  	<li><a href="">你好，wangyuting   退出</a>|</li>
+  	<li><a href="">安全中心</a>|</li>
+  	<li><a href="">充值</a>|</li>
+  	<li><a href="">客服</a></li>
+  </ul>
+</div></div>
+   <!-- tooper结束 -->
+  <div class="header"><div class="containner">
+    <h1><img src="logo.png" alt=""></h1>
+    <ul class="nav">
+    	<li><a href=""class="on">首页<span>HOME</span></a></li>
+    	<li ><a href="" >账号<span>ACCOUNT</span></a></li>
+    	<li><a href="">充值<span>RECHARGE</span></a></li>
+    	<li ><a href="">客服中心<span>SERVICE</span></a></li>
+    </ul>
+ </div></div>
+  <!-- header结束 -->
+ <div class="banner"><div class="containner">
+   <div class="banner1"></div>
+   <div class="banner2">
+      <div class="bannerLeft"></div>
+      <div class="bannerRight">
+        <div class="right1">
+          <p class="bigbtn"><a href=""></a><a href="" class="recharege"></a></p>
+</div>
+         <!-- right1  ed -->
+        <div class="right2"><h3>个人信息</h3></div>
+        <div class="right3">
+          <form action="">
+          <p><input type="text" name="" id="" class="uname"></p>
+          <p class="forgetpwd"><a href="" class="forgetpwd">忘记密码</a></p>
+          <p><input type="password" class="upass"></p>
+          <p class="vadp"><input type="text" class="uvad"><a href="">&nbsp<img src="validatt.jpg" alt="" >&nbsp</a><a href="">看不清</a></p>
+          <p class="subp"><input type="submit" class="sub" value="登   陆"></p>
+             </form>
+</div>
+         </div>
+      <!-- bannerRight  ed -->
+     </div>
+   <!-- banner2  ed -->
+   </div></div>
+ <!-- banner   ed -->
+ <div class="picture"><div class="containner">
+      <ul>
+        <li class="li1"><a href="">游戏礼包</a></li>
+        <li class="li2"><a href="">账号安全</a></li>
+        <li class="li3"><a href="">手机密令</a></li>
+        <li class="li4"><a href="">账号管理</a></li>
+        <li class="li5"><a href="">账号充值</a></li>
+        <li class="li6"><a href="">客服中心</a></li>
+      </ul>
+   </div></div>
+   <!-- picture  ed -->
+ <div class="ad"><div class="containner">
+   <div class="block">
+     <a href="" class="gamein"><img src="img-stfy.jpg" alt=""><img src="hot.png" alt="" class="hot"></a>
+   </div>
+   <div class="block news">
+      <h3>公司新闻<a href="" class="more">more</a></h3>
+      <ul class="newslist">
+        <li><a href=""><span class="title">第一款游戏-隋唐风云</span></a><span class="time">2014-08-05</span></li>
+        <li><a href=""><span class="title">乐游网络技术有限公司的发展前景及其对本行业的影响,哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈。</span></a><span class="time">2014-08-05</span></li>
+        <li><a href=""><span class="title">乐游公司领导赴厦门进行最后实地考察及其属下游戏的运营状况。哈哈哈哈哈哈哈哈啊哈哈哈哈哈哈哈哈</span></a><span class="time">2016-03-03</span></li>
+      </ul>
+</div>
+   <div class="block job">
+     <h3>贤才招聘<a href="" class="more">more</a></h3>
+      <ul class="newslist">
+        <li><a href="" class="a1">剧情策划</a></li>
+        <li><a href="" class="a2">GUI设计师</a></li>
+        <li><a href="" class="a3">平台经理</a></li>
+        <li><a href="" class="a4">客户端开发</a></li>
+        <li><a href="" class="a5">查看更多</a></li>
+      </ul>
+     
+
+
+
+   </div>
+   </div></div>
+    <!-- article结束 -->
+  <div class="footer"><div class="containner"> 
+   <h4><a href=""><img src="foot-logo.png" alt=""></a></h4>
+       <div class="f-text">
+      <p>
+      	<a href="">关于乐游</a>|
+      	<a href="">法律声明</a>|
+      	<a href="">联系我们</a>|
+      	<a href="">诚聘英才</a>|
+      	<a href="">游戏论坛</a>|
+      	<a href="">新隋唐风云官网</a>|
+      	<a href="">家长监护</a>
+      </p> 
+      <p>郑州乐游网络技术有限公司版权所有COPYRIGHT 2014 LEYOU.COM LIMITED.ALL RIGHTS RESERVED.</p>
+      <p>豫网文（2014）0110-002号 <img src="wwwm.png" alt=""></p>
+      <!-- <div class="to"> </div> --> 	
+ </div>
+  	 </div></div>
+	
+</body>
+</html>

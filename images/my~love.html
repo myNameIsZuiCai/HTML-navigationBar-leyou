@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	/*清零阶段*/
+	*{margin: 0;padding: 0;}
+	body{border-collapse: collapse;}
+    a{text-decoration: none;font-family: "微软雅黑";font-size: 12px;}
+    a:hover{text-decoration: underline;color: rgb(114.211,258);}
+    ul,ol{list-style: none;}
+    h1,h2,h3,h4,h5,h6{font-weight: normal;}
+    /*横向布局*/
+   body{background-color: #f6f7f9;}
+    
+	.containner{width: 1000px;margin:0 auto;}
+	.topbar{height: 28px;background-color: #0A0808;}
+	.header{height: 90px;background-color: #FDFBFB;}
+	.banner{height: 170px;background-color: #AAE8ED;}
+	.article{height: 570px;background-color: #FFFFFF;margin-top: -50px;width: 1000px;margin-right: auto;margin-left: auto;}
+	.footer{height: 150px;background-color: #525E6A;margin-top: 120px;}
+   /*横向布局结束*/
+   .bread{height: 50px;background-color: #fff;}
+   .content{height: 520px;width: 1000px;border-top: 1px solid rgb(228,228,228)}
+   .aside{width: 249px;float: left;height: 520px;border-right: 1px solid rgb(228,228,228)}
+   .mainnav{width: 750px;float: right;height: 520px; }
+   .user-infor{height: 180px;width: 750px;}
+   .safe-toois{height: 140px;width: 750px;border-top: 1px solid rgb(228,228,228);border-bottom: 1px solid rgb(228,228,228);}
+   .box{width: 33%;height: 100%;float: left;}
+   .box2{border-left: 1px solid rgb(228,228,228);border-right: 1px solid rgb(228,228,228)}
+   .top{float: right;}
+   .top li{float: left;font-size: 12px;text-align: center;color: #fff;padding-top: 5px;}
+   .top li a{color: #fff;margin-left: 15px;margin-right: 15px;}
+   .top a:hover{text-decoration: underline;color: #F0EAEA;}
+  .header h1{float: left;display: block;margin-top: 15px;}
+  .header ul{float: right;}
+  .header ul li{float: left;border-left:1px dashed #BEBFC3;height: 65px;width: 120px;text-align: center;padding-top: 25px; }
+  .header ul{border-right:1px dashed #BEBFC3;}
+  .header ul li a{display:block;font-size: 18px;color:#494747;height: 62px;}
+  .header span{display: block;font-size: 12px;}
+  .header a:hover{color: #76F4D7;border-bottom: 3px solid #4270A2;}
+  .on{color: #76F4D7;border-bottom: 3px solid #4270A2;}
+  .banner{background-image: url(banner-acc.jpg);}
+  .banner h1{text-align: center;padding-top: 25px;}
+  .banner span{display: block;color: #C4BCBC;font-size: 12px;}
+   .banner h1{font-size: 24px;color: #260970;}
+   /*banner ed*//
+   .bread{float: left;height: 50px;}
+   .bread a{color: #777777;}
+   .link1{float: left;}
+   .link1 li{float: left;height: 50px;line-height: 50px;/*padding-left: 35px;*/margin-left: 35px;}
+   .bread .link1{background: url(bread-icon.gif) no-repeat 20px center;height: 50px;}
+   .link2{float: right;}
+   .link2 li{float:left;width: 120px;height: 50px;line-height: 50px;border-left: 1px solid rgb(228,228,228);text-align: center; }
+   .link2 a{display: block;}
+   .link2 a:hover{color:rgb(114,211,253);}
+   .aside h3{font-weight: bold;color: rgb(37,37,37);}
+   .aside1{padding-left: 35px;padding-top: 35px;}
+   .aside1 li{margin-bottom: 35px;}
+   .aside1 li li{margin-bottom: 0;list-style: square;font-size: 12px;margin-left: 20px;height: 30px;line-height: 30px;color:#A39B9B;}
+   .aside1 li li a{font-size: 14px;color: #9F9898;}
+   .trigle{display: inline-block;width: 0;height: 0;border: 6px solid transparent;border-left-color: rgb(144,211,253);}
+   .picture{display: block;float:left;padding-left: 40px;padding-top: 50px;}
+
+   .info{float: left;padding-left: 20px;padding-top: 20px;font-size: 12px;}
+   .info li{height:35px;line-height: 35px;}
+  
+   .info li a{text-decoration: underline;color: #9EF2FC;}
+   .box1 h3{background: url(icon-mobile.png) no-repeat left center;padding-top: 25px;padding-bottom: 15px;padding-left: 55px;margin-left: 55px;color: 333;}
+   .box1 span{font-size: 12px;color: #777;background:url(icon-right.gif) no-repeat left center;padding-left: 18px;padding-top: 2px;padding-bottom: 2px;}
+   .des{text-align: center;font-size: 12px;margin-top: 20px;color: #aaa;}
+    .box2 h3{background: url(icon-mess.png) no-repeat left center;padding-top: 25px;padding-bottom: 15px;padding-left: 55px;margin-left: 55px;color: 333;}
+   .box2 span{font-size: 12px;color: #777;background:url(icon-alert.gif) no-repeat left center;padding-left: 18px;padding-top: 2px;padding-bottom: 2px;}
+   .des{text-align: center;font-size: 12px;margin-top: 20px;color: #aaa;}
+    .box3 h3{background: url(kiss.png) no-repeat left center;padding-top: 25px;padding-bottom: 15px;padding-left: 55px;margin-left: 55px;color: 333;}
+   .box3 span{font-size: 12px;color: #777;background:url(icon-alert.gif) no-repeat left center;padding-left: 18px;padding-top: 2px;padding-bottom: 2px;}
+   .box a{text-decoration: underline;color: #9EF2FC;}
+   .des{text-align: center;font-size: 12px;margin-top: 20px;color: #aaa;}
+   .safe-mess table{width: 90%;margin-right: auto;margin-left: auto;padding-top: 20px;}
+   .safe-mess td{height: 30px;line-height: 30px;}
+   .safe-mess th{font-weight: normal;color: #4D4D4D;text-align: right;width: 90px;padding-right: 50px;font-size: 12px;}
+   .art{background-color:#FAFAFA;}
+   .safe-mess td{font-size: 12px;color:#B3B3B3;}
+   .safe-mess a{text-decoration: underline;color: #9EF2FC;}
+   .footer h4 {float: left;height: 150px;line-height: 150px; }
+   .footer p img{ vertical-align: top;}
+   .footer p{color: #ECEAEA;padding-top: 25px;/*margin-top:15px;*/padding-left: 35px;float: left;}
+   .footer p a{color: #F3E7E7;font-size: 15px;}
+   .f-text{height: 150px;}
+   
+
+
+	</style>
+</head>
+<body>
+  <div class="topbar"><div class="containner">
+  <ul class="top">
+  	<li><a href="">你好，wangyuting   退出</a>|</li>
+  	<li><a href="">安全中心</a>|</li>
+  	<li><a href="">充值</a>|</li>
+  	<li><a href="">客服</a></li>
+  </ul>
+</div></div>
+   <!-- tooper结束 -->
+  <div class="header"><div class="containner">
+    <h1><img src="logo.png" alt=""></h1>
+    <ul class="nav">
+    	<li><a href="">首页<span>HOME</span></a></li>
+    	<li ><a href="" class="on">账号<span>ACCOUNT</span></a></li>
+    	<li><a href="">充值<span>RECHARGE</span></a></li>
+    	<li ><a href="">客服中心<span>SERVICE</span></a></li>
+    </ul>
+ </div></div>
+  <!-- header结束 -->
+  <div class="banner"><div class="containner">
+  <h1>账号管理<span>ACCOUNT MANAGENT</span></h1>
+ </div></div>
+   <!-- banner ed-->
+  <div class="article"><div class="containner">
+    <div class="bread">
+     <ul class="link1">
+     	<li><a href="">乐游首页</a>  &nbsp  &gt</li>
+     	<li><a href="">账号管理中心</a></li>
+     </ul>
+     <ul class="link2">
+     	<li><a href="">完善资料</a></li>
+     	<li><a href="">修改密码</a></li>
+     	<li><a href="">防沉迷认证</a></li>
+     </ul>
+    	
+
+
+    </div>
+     <!-- bread  ed -->
+    <div class="content">
+    	<div class="aside">
+    	<ul class="aside1">
+    		<li>  <h3><i class="trigle"></i>账号管理</h3>
+    		<ul>
+    			<li><a href="">管理游戏</a></li>
+    			<li><a href="">修改通行证密码</a></li>
+    			<li><a href="">完善个人资料</a></li>
+    			<li><a href="">放沉迷认证</a></li>
+    		</ul></li>
+    		<li>
+    			<h3><i class="trigle"></i>账号安全</h3>
+    			<ul><li><a href="">账号安全设置</a></li></ul>
+    		</li>
+    		<li>
+    		     <h3><i class="trigle"></i>密保管理</h3>
+    		   <ul> <li><a href="">密保卡</a></li>
+    		     <li><a href="">手机令牌</a></li>
+    			</ul></li>
+    	</ul>
+    		</div>
+    	  <!-- asider  ed -->
+    	<div class="mainnav">
+    		<div class="user-infor">
+    		<ul class="picture"><li><img src="user-default.jpg" alt=""></li></ul>
+    		<ul class="info">
+    			<li>乐游账号：  wang*** &nbsp &nbsp <a href="">    实名认证</a></li>
+    			<li>账户余额：  0元&nbsp &nbsp<a href="">       充值</a></li>
+    			<li>安全级别：  <img src="save.png" alt="">   &nbsp &nbsp 中  &nbsp &nbsp<a href="">     提升</a></li>
+    		</ul>
+</div>
+    		<!-- user-infor   ed -->
+    		<div class="safe-toois">
+    		 <div class="box box1">
+    		 <h3>安全手机<br/>
+    		 <span class="bind">已绑定</span>
+    		 <a href="" class="primary">修改</a>
+    		 	</h3>
+    		 	<p class="des">您的账号安全的最高有效凭证</p>
+</div>
+    		 <!-- box1  ed -->
+    		 <div class="box box2"><h3>安全手机<br/>
+    		 <span class="bind">未绑定</span>
+    		 <a href="" class="primary">绑定</a>
+    		 	</h3>
+    		 	<p class="des">安全服务开启时的重要权限判断</p>
+</div>
+    		 <div class="box box3"><h3>手机密令<br/>
+    		 <span class="bind">未绑定</span>
+    		 <a href="" class="primary">下载</a>
+    		 	</h3>
+    		 	<p class="des">动态密码有效防止盗号</p>
+</div>
+</div>
+    		<!-- safe-tools结束 -->
+    		<div class="safe-mess">
+    		<table>
+    			<tr class="art">
+    				<th>登陆密码:</th>
+    				<td>登陆支付宝账户时需要输入的密码修改登陆密码</td>
+    				<td ><a href="" class="primary-link">修改密码</a></td>
+    			</tr>
+    			<tr>
+    				<th>个人资料:</th>
+    				<td>未完善个人资料</td>
+    				<td><a href="" class="primary-link">立即完善</a></td>
+    			</tr>
+    			<tr class="art">
+    				<th>实名认证:</th>
+    				<td>未实名认证或未满18周岁账号，账号进入防沉迷状态。什么事防沉迷？</td>
+    				<td><a href="" class="primary-link">已认证</a></td>
+    			</tr>
+    			<tr>
+    				<th>密 保 卡:</th>
+    				<td>尚未绑定</td>
+    				<td><a href="" class="primary-link">立即绑定</a></td>
+    			</tr>
+    		</table>
+</div>
+    	</div>
+    </div>
+     <!-- content结束 -->
+  	</div></div>
+    <!-- article结束 -->
+  <div class="footer"><div class="containner">
+     <h4><a href=""><img src="foot-logo.png" alt=""></a></h4>
+     <div class="f-text">
+      <p>
+      	<a href="">关于乐游</a>|
+      	<a href="">法律声明</a>|
+      	<a href="">联系我们</a>|
+      	<a href="">诚聘英才</a>|
+      	<a href="">游戏论坛</a>|
+      	<a href="">新隋唐风云官网</a>|
+      	<a href="">家长监护</a>
+      </p> 
+      <p>郑州乐游网络技术有限公司版权所有COPYRIGHT 2014 LEYOU.COM LIMITED.ALL RIGHTS RESERVED.</p>
+      <p>豫网文（2014）0110-002号 <img src="wwwm.png" alt=""></p>
+      <!-- <div class="to"> </div> --> 	
+ </div>
+  	 </div></div>
+	
+</body>
+</html>

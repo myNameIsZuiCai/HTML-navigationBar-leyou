@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>导航界面</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        ul{
+            list-style: none;
+        }
+        img{
+            border: 0px;
+        }
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1000px;
+        }
+        .header{
+            height: 90px;
+        }
+        .logo{
+            float: left;
+        }
+        .main-nav{
+            float: right;
+            border-right: 1px dashed gray;
+        }
+        .main-nav li{
+            float: left;
+            width: 120px;
+            border-left: 1px dashed gray;
+            text-align: center;
+            height: 90px;
+        }
+        .main-nav span{
+            display: block;
+            font-size: 12px;
+        }
+        .main-nav a{
+            display: block;
+            text-decoration: none;
+            /*color: #3A0868;*/
+            font-size: 18px;
+            padding-top: 30px;
+            height: 60px;
+        }
+        .main-nav a:hover{
+            color: #a459ff;
+            border-bottom: 3px solid #a459ff;
+        }
+        .main-nav .active{
+            color: #a459ff;
+            border-bottom: 3px solid #a459ff;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+    <h2 class="logo"><a href=""><img src="images/logo.png" alt=""></a></h2>
+    <ul class="main-nav">
+        <li><a href="">首页1<span>HOME1</span></a></li>
+        <li><a href="" class="active">账号管理<span>HOME2</span></a></li>
+        <li><a href="">首页3<span>HOME3</span></a></li>
+        <li><a href="">首页4<span>HOME4</span></a></li>
+    </ul>
+    </div>
+</div>
+</body>
+</html>
